@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+
+	<script>
+		let arr =[
+		  {kod:'1',summa:1000},
+		  {kod:'2',summa:2000},
+		  {kod:'3',summa:3000},
+		  {kod:'4',summa:4000},
+	   ]
+
+
+
+
+
+
+	   	let q = ''
+		let s = 0
+		function bank1(arg1) {
+			let g = null			
+			for(let i = 0; i < arr.length;i++){
+
+				if (arg1 === arr[i].kod)					
+				g = 'bar: ' + arr[i].summa + ' сом.'	
+					q = i
+			}  
+			return g
+		}
+		 let p = prompt('kod')
+		 console.log(bank1(p))
+
+
+		// function bank2(arg2) {
+		// 	let b = +prompt('kancha')
+					
+		// 	if (arr[i].summa =  b) {
+		// 		arr[i].summa - (b - (b / 100 * 5))
+		// 		console.log( 'остаток: ' + arr[i].summa + ' сом.' )
+		// 	}
+
+		// } 
+		
+		//console.log(bank2(b))
+		//for () {
+		
+		
+		   //if () {
+		   	//console.log('vash balans')
+		   //}
+		//}
+		
+
+
+
+	</script>
+</body>
+</html>

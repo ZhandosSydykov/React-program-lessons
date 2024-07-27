@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onchange</title>
+	<style>
+		#a {
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="a">0</div>
+	<script>
+		//сохранение данных в хранилише браузера
+		//localStorage - постаянное хранилише 
+		//sessionStorage - временное хранилише
+		//removeItem - удаление из хранилиша
+
+		let a = document.getElementById('a')
+		let b = 0
+
+		document.body.onkeyup = (event) => {
+			if (event.keyCode === 13) {
+				b += 1
+				a.innerHTML = b
+				localStorage.setItem('plus', b)
+			}
+		}
+
+		a.innerHTML = localStorage.getItem('plus')
+
+
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.a {
+			
+			display: flex;
+
+		}
+
+		#id1 {
+			width: 300px;
+			height: 300px;
+			border: 1px solid;
+			border-radius: 50%;
+			background-color: red;
+			font-size: 150px;		
+			text-align: center;
+
+		}
+
+		#id2 {
+			width: 300px;
+			height: 300px;
+			border: 1px solid;
+			border-radius: 50%;
+		}
+
+		#id3 {
+			width: 300px;
+			height: 300px;
+			border: 1px solid;
+			border-radius: 50%;
+			background-color: green;
+			font-size: 150px;		
+			text-align: center
+		}
+
+		.p{
+			font-size: 130px;
+			margin-top: 60px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div id="id1" >-</div>
+		<div id="id2">
+			<p class="p" id="p">0</p>
+		</div>
+		<div id="id3">+</div>
+	</div>
+
+
+	<script> 
+		let plus = document.getElementById('id1')
+		let ravno = document.getElementById('id2')
+		let minus = document.getElementById('id3')
+		let p = document.getElementById('p')
+		let a = 0
+
+		minus.onclick = function() {
+			if (a >= 0) {
+				ravno.style.color = 'green'
+			}
+			if (a >= 99) {
+				p.style.fontSize = '60px'
+			}
+			p.textContent =+ ++a
+		}
+		
+
+
+		plus.onclick = function() {
+			if (a <= 0) {
+				ravno.style.color = 'red'
+			}
+			if (a < 99) {
+				p.style.fontSize = '100px'
+			}
+			p.textContent =+ --a
+		}
+		
+ 
+	</script>
+</body>
+</html>

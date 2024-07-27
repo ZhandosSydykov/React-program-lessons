@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div>
+		<input type="text" id="inp" name="">
+		<button id="btn">SHOW</button>
+	</div>
+	<h1 aligin='center' id="h1"></h1>
+	<img src="" style="width: 300px;" id="img">
+
+
+
+	<script>
+		let inp = document.getElementById('inp')
+		let btn = document.getElementById('btn')
+		let h1  = document.getElementById('h1')
+		let img = document.getElementById('img')
+
+		let image = {
+			cat: 'https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png',
+			dog: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=640:*',
+			cow: 'https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg',
+			birth: 'https://www.lovethegarden.com/sites/default/files/content/articles/UK_wildbirds-01-robin.jpg',
+			snake: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg',
+			fish: 'https://i.insider.com/57a4db38dd089551028b465b?width=1136&format=jpeg',	
+		}
+
+		btn.onclick = function show() {
+			if (inp.value in image) {
+				h1.innerHTML += inp.value
+				img.src = image[inp.value] 	
+			} else {
+				alert('error')
+			}
+			
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#img1{
+			width: 900px;
+			height: 800px;
+		}
+		#img2{
+			width: 385px;
+			height: 755px;
+			position: absolute;
+			left: 265px;
+			top: 30px;
+			border-radius: 50px;
+			
+		}
+
+		#div1 {
+			width: 130px;
+			height: 300px;
+			position: absolute;
+			left: 300px;
+			top: 320px;
+			z-index: 1;
+		}
+		#div2 {	
+			width: 130px;
+			height: 300px;
+			position: absolute;
+			left: 500px;
+			top: 320px;
+			z-index: 1;
+		}
+
+		#div3{
+			width: 100px;
+			height: 8px;
+			background-color: white;
+			border-radius: 10px;
+			position: absolute;
+			top: 40px;
+			left: 350px;
+			z-index: 5;
+			animation-name: div3;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-delay: 2s;
+			animation-fill-mode: backwards;
+		}
+
+		@keyframes div3 {
+			from {
+				width: 0;
+			}
+			to {
+				width: 100px;
+			}
+		}
+
+
+		#div4{
+			width: 100px;
+			height: 8px;
+			background-color: black;
+			position: absolute;
+			border-radius: 10px;
+			top: 40px;
+			left: 480px;
+			z-index: 5;
+			animation-name: div4;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-delay: 2s;
+			animation-fill-mode: backwards;
+		}
+
+		@keyframes div4 {
+			from {
+				width: 0;
+			}
+			to {
+				width: 100px;
+			}
+		}
+
+		#div5{
+			width: 100px;
+			height: 8px;
+			background-color: grey;
+			position: absolute;
+			border-radius: 10px;
+			top: 40px;
+			left: 480px;
+			z-index: 4;
+		}
+
+		#div6{
+			width: 100px;
+			height: 8px;
+			background-color: grey;
+			position: absolute;
+			border-radius: 10px;
+			top: 40px;
+			left: 480px;
+			z-index: 4;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+
+	<div id="div5"></div>
+	<div id="div6"></div>
+
+	<img src="https://www.mechta.kz/images/product/55054/17000000094_1-1024.webp" id="img1">
+
+	<img  src="https://cdn.livingintravels.com/i/posts/8993/default/rim-dlya-novichkov-ili-kak-uvidet-gorod-besplatno-pochti-9016-2x.jpg" id="img2" style="display: block;">
+
+	<script>
+		let div1 = document.getElementById('div1')
+		let div2 = document.getElementById('div2')
+		let img2 = document.getElementById('img2')
+		let div3 = document.getElementById('div3')
+
+		div2.onclick = function div2() {
+			img2.src = 'https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__popular_attractions/public/hero_banner/Colosseum-Rome.jpg'
+			div4.style.background = 'white'
+			div3.style.background = 'black'
+			}
+		
+
+		div1.onclick = function div2() {
+			img2.src = 'https://cdn.livingintravels.com/i/posts/8993/default/rim-dlya-novichkov-ili-kak-uvidet-gorod-besplatno-pochti-9016-2x.jpg'
+			div3.style.background = 'white'
+			div4.style.background = 'black'
+		}
+
+		setTimeout ( () => {
+			if (div3 = 100'px'){
+				img2.src = 'https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__popular_attractions/public/hero_banner/Colosseum-Rome.jpg'
+			}
+		}, 100)
+	</script>
+</body>
+</html>

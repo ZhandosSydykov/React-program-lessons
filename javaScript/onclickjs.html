@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#box {
+			margin-top: 50px auto;
+			width: 300px;
+			height: 300px;
+			border: 2px solid;
+		}
+	</style>
+</head>
+<body >
+	<div id="box"></div>
+	<button id="inp">botton</button>
+
+	<script>
+		
+		let btn = document.getElementById('inp')
+		let box = document.getElementById('box')
+
+		btn.onclick = function click(){
+			box.style.background = box.style.background === "white" ? "green" : "white"
+		}
+
+		//btn.onclick = click
+		
+
+	</script>
+</body>
+</html>

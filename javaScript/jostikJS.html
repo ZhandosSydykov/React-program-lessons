@@ -1,0 +1,128 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jostic</title>
+	<style>
+		#block {
+			width: 500px;
+			height: 500px;
+			background-color: grey;
+			position: relative;
+			
+		}
+
+		.a {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			border-radius: 50%;
+			position: absolute;
+		}
+
+		#box1 {
+			top: -40px;
+			left: 200px;
+		}
+		#box2 {
+			left: -40px;
+			top: 200px;
+		}
+		#box3 {
+			right: -40px;
+			top: 200px;
+		}
+		#box4 {
+			bottom: -40px;
+			left: 200px;
+		}
+
+		#box {
+			background-color: red;
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="block">
+		<div id="box1" class="a"></div>
+		<div id="box2" class="a"></div>
+		<div id="box" class="a"></div>
+		<div id="box3" class="a"></div>
+		<div id="box4" class="a"></div>
+	</div>
+
+
+	<script>
+		let a = 0
+		let b = 0
+
+		let to = document.getElementById('box1')
+		let left = document.getElementById('box2')
+		let right = document.getElementById('box3')
+		let bottom = document.getElementById('box4')
+		let box = document.getElementById('box')
+		
+
+		to.onclick = () =>{ 
+			b -= 20 
+			box.style.top = b + 'px'
+		} 
+
+		left.onclick = function name1 (){
+			a -= 20 
+			box.style.left = a + 'px'
+		} 
+
+		right.onclick = function  (){
+			a += 20 
+			box.style.left = a + 'px'
+		} 
+
+		bottom.onclick = function (){
+			b += 20 
+			box.style.top = b + 'px'
+		} 
+
+
+
+
+
+
+		// //Виды функции 
+
+		// // Обычная функция
+		// function sayHello() {
+		// 	console.log("Hello!");
+		// }
+
+
+		// //Анонимная функция
+		// let sayHello = function() {
+    	// 	console.log("Hello!");
+		// };
+
+		// //Стрелочная функция
+		// let add = (a, b) => a + b;
+
+		// //Функция конструктор
+		// function Person(name, age) {
+		// 	this.name = name;
+		// 	this.age = age;
+		// }
+		// let person1 = new Person("Alice", 30);
+
+		// // Функция обратного вызова (Callback funtion)
+		// function fetchData(url, callback) {
+		// 	// код для получения данных по URL
+		// 	let data = /* данные полученные по URL */;
+		// 	callback(data);
+		// }
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	
+	<script>
+		// let s = 0
+		// let m = 0
+		// let c = 0
+		// let a = +prompt('time')
+		// function Time(){				
+  			
+  // 			s = a % 60
+  // 			m = ((a - s )/ 60 ) % 60
+  // 			c = (((a - s) / 60) - m )/ 60
+  		
+		// }
+		
+		// Time()
+		
+		// if( s < 10 && m < 10 && c < 10) {
+		// 	console.log('0' + c + ':' + '0'  + m + ':'+ '0' + s)
+		// }else{
+		// 	console.log(c + ':'  + m + ':' + s)
+		// }	
+
+
+
+		//время
+		 let s = 0
+		 let m = 0
+		 let c = 0
+		function convert(a) {
+			s = a % 60
+   			m = ((a - s )/ 60 ) % 60
+   			c = (((a - s) / 60) - m )/ 60
+			return `${c < 10 ?  '0' + c : c} : ${m < 10 ? '0' + m : m} : ${s < 10 ? '0' + s :s}`
+		}
+		console.log(convert(+prompt('time')))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+	</script>
+</body>
+</html>

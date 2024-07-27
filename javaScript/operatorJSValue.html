@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>operator</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+
+	<h1 id="h1"></h1>
+	<input type="text" name="" id="in">
+	<button id="btn">qwerty</button>
+
+	<img id="img" src="" >
+	
+
+	<script>
+		//let a = prompt('OPERATOR')
+		let h1 = document.getElementById('h1')
+		let input = document.getElementById('in')
+		let but = document.getElementById('btn')
+		let img = document.getElementById('img')
+
+		let arr = { 		
+			megacom: 'https://www.megacom.kg/uploads/ckeditor/pictures/1484/content_ru_MegaCom_%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png',
+			beline: 'https://24.kg/files/media/262/262971.jpg',
+			o: 'https://knews.kg/wp-content/uploads/2016/02/oshka.jpg'
+	 	}
+		
+
+		function name() {
+			if (input.value.length == 10) {
+				let a = +(input.value[1] + input.value[2] + input.value[3])
+
+				if (709 >= a && a >= 700) {
+				img.src = arr.o	
+				}
+				else if (779 >= a && a >= 770 ) {
+				img.src = arr.beline	
+				}
+				else if (559 >= a && a >= 550) {
+				img.src = arr.megacom	
+				} else {
+					alert('arror')
+				}
+			} else { 
+				alert('arror')
+			}
+
+		}
+
+		but.onclick = name
+		// 735 + 740 = 1475 = 7375
+		// a = 2950
+		// aza = 400 = 390 = 2300
+		// nusu = 335 = 350 = 2000
+		// jandos = 800 
+
+
+
+
+		
+
+
+	</script>
+</body>
+</html>

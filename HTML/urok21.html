@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    body{
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+    <script>
+      let tort = +prompt('торт 500сом')
+      let banan = +prompt('banan 100som')
+      let cake = +prompt('пирожное 200som')
+      let a = tort * 500
+      let b = banan * 100
+      let c = cake * 200
+      let v = a+b+c
+      alert('Общяя сумма ' + v)
+      let m = +prompt('Сколько заплатите')
+      let x = m - v
+      if (m >= v) {
+        alert('ваша здача '+ x)
+      }else {
+        alert('у вас нехватает ' + x)
+      }
+
+    </script>
+</body>
+</html>

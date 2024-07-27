@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1 id="h1"></h1>
+	<input type="input" name="" id="in">
+	<button id="btn">qwerty</button>
+
+
+	<script>
+		
+		let h1 = document.getElementById('h1')
+		let input = document.getElementById('in')
+		let btn = document.getElementById('btn')
+
+
+
+		btn.onclick = function name() {
+			h1.innerHTML = input.value			
+		}
+
+
+		// input.onkeyup = show  // норм
+		// input.onkeydown = show // задержка
+		// input.onkeypress = show // быстро
+
+		// function show () {
+		// 	h1 innerHTML = input.value
+		// }
+
+
+ 		//clear
+		// btn.onclick = function clear () {
+		// 	h1.innerHTML = ''
+		// 	input.value = ''
+		// }
+	</script>
+</body>
+</html>

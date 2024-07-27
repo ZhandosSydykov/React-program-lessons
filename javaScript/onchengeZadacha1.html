@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.block {
+			width: 500px;
+			height: 300px;
+			border-radius: 50px;
+			margin: auto;
+			margin-top: 300px;
+			opacity: 0.6;
+			background-color: darkgrey;
+		}
+		h1{
+			text-align: center;
+		}
+		.inp1{
+			margin: 10px;
+			font-size: 30px;
+			margin-left: 65px;
+			border-radius: 20px;
+			
+		}
+		h2{
+			text-align: center;
+		}
+
+		body{
+			background-color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="block">
+		<h1>INSTAGRAM</h1>
+		<input class="inp1" type="text" name="" placeholder="login">
+		<input class="inp1" type="password" name="" placeholder="password">
+		<h2>забыли пароль?</h2>
+	</div>
+
+	<label>
+		<input id="inp" type="checkbox" name="">
+		Темный режим
+	</label>
+
+
+	<script>
+		let inp = document.getElementById('inp');
+		let body = document.body;
+
+		inp.addEventListener('change', () => {
+			body.style.backgroundColor = inp.value === '' ? 'black' : 'green';
+		});
+
+	
+	
+	
+	
+	
+	
+		// body = document.body
+		// inp.onchange = (e) => {
+		// 	name()
+		// }
+
+		// function name() {
+		// 	if (inp = true) {
+		// 		body.style.background = 'black'
+		// 	}if (inp = fa) {
+		// 		body.style.background = 'white'
+		// 	}
+		// }
+
+
+	</script>
+</body>
+</html>

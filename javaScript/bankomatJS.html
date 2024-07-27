@@ -1,0 +1,53 @@
+     <!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+</head>
+<body>
+ <script type="text/javascript">
+  let a =[
+	  {kod:'1',summa:10000},
+	  {kod:'2',summa:100000},
+	  {kod:'3',summa:20000},
+	  {kod:'4',summa:1000},
+	   ]	   
+	   let r = 0
+	    for (let e = 2; e >= 0; e--){
+	   let s = prompt('pin')
+	    for (let i = 0; i < a.length; i++) {
+	    if (s==a[i].kod) {
+	      console.log('Ваш баланс:'+a[i].summa+' cом.')
+	      for (let m = true ; m;) {
+	       if(m){
+	        if (m) {
+	         let f = +prompt('Сколько')
+	          if(f<a[i].summa){
+	    	    m = confirm('хотите ещё вывести?')
+	          f+=a[i].summa-f-f-f*5/100
+	          r+=a[i].summa-f
+	          console.log(`Общий остаток  ${a[i].summa-r}`)
+	         }
+	         else if(f>=a[i].summa){
+	          console.log('Не достоточно средств')
+	         }
+	        }
+	        if(!m){
+	         
+	       alert('Спасибо за доверие')
+	       }
+	       }
+	      }
+	     e = i
+	    }  
+	   }
+	   if (s != a[e].kod) {
+	    console.log('Не правильный пароль')
+	    console.log(e === 2 ? 'У тебя 2 попытки': e == 0 ? 'Ваша карта заблокирована ' : e===1?'У тебя 1 попытки':'')
+	   }
+	  } 
+ </script>
+	
+</body>
+</html>

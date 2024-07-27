@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>operator</title>
+</head>
+<body>
+
+	<img id="img" src="">
+	<img id="img1" src="">
+	<img id="img2" src="">
+	<img id="img3" src="">
+
+	<script>
+		let a = prompt('OPERATOR')	
+		let b = a[1] + a[2] + a[3]
+		let c = a[4] + a[5] + a[6]		
+		let x = a[0] + a[1] + a[2]		
+		if (a.length == 13 || 10)  {	 
+			if (a[1] + a[2] + a[3] >= 700 && a[1] + a[2] + a[3] <= 709 || a[4] + a[5] + a[6] >= 700 && a[4] + a[5] + a[6] <= 709 )  {
+				let img = document.getElementById('img')
+				img.src = 'https://knews.kg/wp-content/uploads/2016/02/oshka.jpg'
+			}
+
+			else if (a[1] + a[2] + a[3] >= 770 && a[1] + a[2] + a[3] <= 779 || a[4] + a[5] + a[6] >= 770 && a[4] + a[5] + a[6] <= 779)  {
+				let img1 = document.getElementById('img1')
+				img.src = 'https://24.kg/files/media/262/262971.jpg'
+			}
+
+			else if (a[1] + a[2] + a[3] >= 550 && a[1] + a[2] + a[3] <= 559 || a[4] + a[5] + a[6] >= 550 && a[4] + a[5] + a[6] <= 559)  {
+				let img2 = document.getElementById('img2')
+				img.src = 'https://www.megacom.kg/uploads/ckeditor/pictures/1484/content_ru_MegaCom_%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png'
+			} else {
+				let img3 = document.getElementById('img3')
+				img.src = 'https://www.gabankruptcylawyersnetwork.com/files/2014/09/forbidden-sign1.jpg'
+			}
+		}
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		
+
+		#box {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	</style>
+</head>
+<body>
+
+		<div id="box">
+			<p id="p"></p>
+		</div>
+
+
+	<script>
+		let a  = prompt('')
+		let box = document.getElementById('box')
+		for (let i = 0; i < a; i++) {
+			box.innerHTML += `<div style = "width:200px; height: 200px; border-radius: 50%; background-color:blakc; text-aligin:center;> ${i + 1} </div>" `
+		}
+	</script>
+</body>
+</html>

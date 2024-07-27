@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		body{
+			background-color: darkred;
+			display: flex;
+			justify-content: center;
+			margin-top: 200px;
+			align-items: center;
+		}	
+
+		input {
+			font-size: 50px;
+			border-radius: 25px;
+			border: none;
+		}
+
+		#btn {
+			height: 70px;
+			width: 130px;
+			border-radius: 25px;
+		}
+	</style>
+</head>
+<body>
+
+	<input id="inp" type="password" name="t">
+	<button id="btn">  </button>
+
+
+	<script>
+		
+		let ip = document.getElementById('inp');
+		let a = document.getElementById('btn');
+		
+		a.onclick = function name() {
+			if (ip.type === 'password') {
+				ip.type = 'text'
+				a.innerText = 'СКПЫТЬ ПАРОЛЬ'
+			} else {
+				ip.type = 'password'
+				a.innerText = 'ПОКАЗАТЬ ПАРОЛЬ'
+			}
+		}
+		
+	</script>
+</body>
+</html>

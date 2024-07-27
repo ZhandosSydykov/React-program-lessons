@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<script>
+		
+		let index = 0
+		let text = 'jandos lkjknbvhi;hvbmihjvbn ,hikj,ouihc,uoihj,h.ulicxbmhil/yxfb.uilgfcbn.yiufgcnghyufcb '
+
+		setInterval( () => {
+			let a = document.getElementById('demo')
+			if (index == index) {				
+				a.textContent += text[index]
+				console.log(index)
+			}
+			index++
+			if (index === text.length ) {
+				index = 0
+				a.textContent = ' '
+			}
+			 
+		}, 100 )
+			
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>raduga</title>
+
+</head>
+<body>
+	
+		<h1 id="h1"></h1>
+
+	<script>
+		
+		let h1 = document.getElementById('h1')
+		let a = prompt('text')
+		let arr = ['red','blue','orange',"black"]
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			for(let i = 0 ; i < a.length; i++){
+				h1.innerHTML += `<span style = "  color: ${arr[i % arr.length]}"> ${a[i]} </span>`
+			}
+		
+
+	</script>
+</body>
+</html>

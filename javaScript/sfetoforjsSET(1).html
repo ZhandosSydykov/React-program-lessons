@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style">
+	<style>
+
+		.block{
+			width: 100px;
+			height: 280px;
+			background-color: black;
+			color: white;
+			font-size: 35px;
+			border-radius: 10px;
+			position: relative;
+		}
+
+		.box{
+			width: 80px;
+			height: 80px;
+			font-size: 35px;
+			margin: 10px;
+			border-radius: 50%;
+			color: white;
+			position: absolute;
+		}
+		.a1{			
+			background-color: red;
+			border: 1px solid red;
+						
+		}
+
+		.a2{
+			background-color: yellow;
+			top: 90px;
+			border: 1px solid yellow;
+		}
+
+		.a3{
+			background-color: green;
+			top: 180px;
+			border: 1px solid green;
+		}
+
+		p{
+			color: black;
+			text-align: center;
+			margin-top: 25px;
+		}
+
+	</style>
+</head>
+<body>
+		<h1 id="h1"> HELLO BESOFT TEACH</h1>
+	<div class="block">
+		<div class="box a1" id="red"></div>
+		<div class="box a2" id="yellow">
+			<p id="p" class="p1"></p>
+		</div>
+		<div class="box a3" id="green"></div>
+	</div>
+
+
+	<script>
+		let a = 15
+		 
+		
+		setInterval( () => {
+			let pp = document.getElementById('p')
+				pp.innerText = a
+			
+			let red = document.getElementById('red')
+			let green = document.getElementById('green')
+			 function fun() {
+				red.style.background = red.style.background === 'black'? 'red' : 'black'
+				green.style.background = green.style.background === 'green'? 'black' : 'green'
+			}
+
+			let bek = document.getElementById('yellow')
+			
+			if (a == 4 || a == 3 || a == 2 || a == 1 || a == 0) {
+				bek.style.background = bek.style.background === 'black' ? 'yellow' : 'black' 
+				bek.style.background = bek.style.background === 'yellow' ? 'black' : 'yellow'
+
+
+				if (bek.style.background == 'black') {
+					bek.style.color =='red'
+				}
+			} else {
+				bek.style.color =='black' 
+			}
+			
+			
+
+			a--
+			if(a < 0) {
+				a = 15
+				fun ()
+			}
+			
+			
+		
+
+		}, 300)
+
+
+	</script>
+</body>
+</html>

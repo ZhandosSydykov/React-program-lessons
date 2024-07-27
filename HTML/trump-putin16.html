@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		h1 {
+			text-align: center;
+			font-size: 50px;
+		}
+		.block {
+			width: 100%;
+			height: 300px;
+			border: 3px solid green;
+			display: flex;
+			position: relative;
+		}
+
+		.box {
+			width: 400px;
+			height: 250px;
+			border: 2px solid blue;
+			position: absolute;
+			left: 30px;
+			top: 25px;
+			overflow: hidden;
+			transition: 1s;
+
+
+		}
+
+		.b {
+			left: 500px;
+		}
+
+		img {
+			width: 400px;
+			height: 250px;
+			transition: 1s;
+		}
+
+		.text {
+			width: 320px;
+			height: 70px;
+			border-radius: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			position: absolute;
+			left: 140px;
+			top: 280px;
+			text-align: center;
+			transition: 1s;
+			z-index: 3;
+			font-size: 20px;
+
+		}
+
+		.box:hover img{
+			width: 500px;
+			height: 350px;
+		}
+
+		.box:hover .text {
+			top: 160px;
+			left: 60px;
+		}
+
+		.box:hover {
+			border-radius: 30px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Breaking news</h1>
+
+	<div class="block">
+		<div class="box ">
+			<img src="https://static.dw.com/image/55598269_303.jpg">
+			<div class="text">
+				<p>Donald Trump American President</p>
+			</div>
+		</div>
+
+		<div class="box b">
+			<img src="https://cdnuploads.aa.com.tr/uploads/Contents/2022/05/14/thumbs_b_c_f0252029bc876cae38d5340edc45fafd.jpg?v=160205">
+			<div class="text">
+				<p>Vladimir Putin Russian President</p>
+			</div>
+		</div>
+	</div> 
+
+
+	<div>
+		<div>
+			<div>
+				<h1></h1>
+			</div>
+			<i></i>
+		</div>
+	</div>
+</body>
+</html>
